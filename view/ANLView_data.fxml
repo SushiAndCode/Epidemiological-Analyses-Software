@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefWidth="256.0" styleClass="menu-bar" stylesheets="@../StileGUI.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="704.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="254.0">
+               <children>
+                  <Label contentDisplay="CENTER" graphicTextGap="0.0" onMousePressed="#changeScreenTo_ANLView" prefHeight="60.0" prefWidth="256.0" styleClass="menu-header" stylesheets="@../StileGUI.css" text="PandemicHub" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+                  <Button graphicTextGap="0.0" mnemonicParsing="false" onAction="#changeScreenTo_ANLView" opacity="0.0" prefHeight="60.0" prefWidth="256.0" text="home" />
+               </children>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Pane>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button-active" stylesheets="@../StileGUI.css" text="Dati" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="-2.0" left="-8.0" right="-8.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#changeScreenTo_ANLView_chart" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Grafici" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="-2.0" left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#changeScreenTo_ANLView_export" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Esporta" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets bottom="-2.0" left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Avvisi" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Agenda" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Settings" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" top="100.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" layoutX="-800.0" mnemonicParsing="false" onAction="#changeScreenTo_LoginView" prefHeight="50.0" prefWidth="256.0" styleClass="menu-button" stylesheets="@../StileGUI.css" text="Log Out" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <Pane layoutX="256.0" layoutY="60.0" prefHeight="65.0" prefWidth="704.0" styleClass="section-used-pane" stylesheets="@../StileGUI.css">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" graphicTextGap="0.0" layoutY="27.0" prefHeight="40.0" prefWidth="704.0" text="DATI" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+            <Label alignment="BOTTOM_LEFT" contentDisplay="CENTER" graphicTextGap="0.0" layoutY="4.0" prefHeight="26.0" prefWidth="704.0" text="/analista/dati" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="256.0" prefHeight="60.0" prefWidth="704.0" styleClass="user-panel" stylesheets="@../StileGUI.css" AnchorPane.leftAnchor="256.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label fx:id="idCredenziali" alignment="CENTER_RIGHT" layoutX="352.0" layoutY="20.0" prefHeight="20.0" prefWidth="300.0" text="Nome Cognome" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets right="10.0" />
+               </padding>
+            </Label>
+            <Circle fill="WHITE" layoutX="672.0" layoutY="30.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" styleClass="user-img" />
+         </children>
+      </Pane>
+      <GridPane layoutX="256.0" layoutY="124.0" prefHeight="415.0" prefWidth="704.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="163.5999755859375" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="398.0" minHeight="3.799996948242182" prefHeight="13.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="398.0" minHeight="10.0" prefHeight="360.00001220703126" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <TableView prefHeight="100.0" prefWidth="704.0" stylesheets="@../StileGUI.css" GridPane.rowIndex="2">
+               <columns>
+                  <TableColumn minWidth="-Infinity" prefWidth="120.0" text="Terapia intensiva" />
+                  <TableColumn minWidth="-1.0" prefWidth="100.0" text="Medico di base" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m1" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m2" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m3" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m4" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m5" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m6" />
+                  <TableColumn minWidth="-1.0" prefWidth="65.0" text="m7" />
+               </columns>
+               <GridPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" />
+               </GridPane.margin>
+            </TableView>
+            <GridPane prefHeight="50.0" prefWidth="704.0" styleClass="selection-bar" stylesheets="@../StileGUI.css">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="347.199951171875" minWidth="10.0" prefWidth="59.1999755859375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.3999999999999" minWidth="10.0" prefWidth="176.0000244140625" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.3999999999999" minWidth="0.0" prefWidth="39.99997558593748" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.3999999999999" minWidth="10.0" prefWidth="172.5999755859375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.3999999999999" minWidth="10.0" prefWidth="92.00002441406252" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="621.3999999999999" minWidth="10.0" prefWidth="166.39999999999998" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <Label prefHeight="20.0" prefWidth="33.0" text="Zona">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiseBox_Comuni" minHeight="-Infinity" prefHeight="26.0" prefWidth="150.0" styleClass="selection-bar-choise-box" stylesheets="@../StileGUI.css" GridPane.columnIndex="1" />
+                  <Label prefHeight="20.0" prefWidth="33.0" text="Anno" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox fx:id="choiseBox_Comuni1" minHeight="-Infinity" prefHeight="26.0" prefWidth="150.0" styleClass="selection-bar-choise-box" stylesheets="@../StileGUI.css" GridPane.columnIndex="3" />
+                  <ChoiceBox fx:id="choiseBox_Comuni11" minHeight="-Infinity" prefHeight="26.0" prefWidth="150.0" styleClass="selection-bar-choise-box" stylesheets="@../StileGUI.css" GridPane.columnIndex="5">
+                     <GridPane.margin>
+                        <Insets right="20.0" />
+                     </GridPane.margin>
+                  </ChoiceBox>
+                  <Label prefHeight="20.0" prefWidth="85.0" text="Segnalazione" GridPane.columnIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

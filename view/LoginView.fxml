@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="progetto.Controller">
+   <children>
+      <VBox prefWidth="960.0" styleClass="menu-bar" stylesheets="@../StileGUI.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Pane prefHeight="60.0" prefWidth="960.0">
+               <children>
+                  <Label contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="60.0" prefWidth="960.0" styleClass="menu-header" stylesheets="@../StileGUI.css" text="PandemicHub" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="50.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+            </Pane>
+            <AnchorPane prefWidth="960.0">
+               <VBox.margin>
+                  <Insets left="-8.0" right="-8.0" />
+               </VBox.margin>
+               <children>
+                  <VBox prefHeight="300.0" prefWidth="400.0" styleClass="login-pane" stylesheets="@../StileGUI.css" AnchorPane.leftAnchor="280.0" AnchorPane.rightAnchor="280.0" AnchorPane.topAnchor="100.0">
+                     <children>
+                        <Pane prefHeight="60.0" prefWidth="400.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="0.0" prefHeight="60.0" prefWidth="400.0" styleClass="login-header" stylesheets="@../StileGUI.css" text="LOG IN" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane prefHeight="40.0" prefWidth="400.0">
+                           <children>
+                              <PasswordField fx:id="idField" layoutX="100.0" layoutY="8.0" prefHeight="20.0" prefWidth="200.0" promptText="user_ID" styleClass="login-psw" stylesheets="@../StileGUI.css" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="40.0" prefWidth="400.0">
+                           <children>
+                              <PasswordField fx:id="pswField" layoutX="100.0" layoutY="7.0" prefHeight="20.0" prefWidth="200.0" promptText="password" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="60.0" prefWidth="400.0">
+                           <children>
+                              <Button layoutX="100.0" layoutY="10.0" mnemonicParsing="false" onAction="#checkLogin" prefHeight="40.0" prefWidth="200.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="ACCEDI" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="30.0" />
+                           </VBox.margin>
+                        </Pane>
+                        <Pane prefHeight="60.0" prefWidth="400.0">
+                           <children>
+                              <Button layoutX="14.0" layoutY="9.0" mnemonicParsing="false" onAction="#changeScreenTo_PCNView" prefHeight="40.0" prefWidth="70.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="PCN" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="163.0" layoutY="9.0" mnemonicParsing="false" onAction="#changeScreenTo_PE1View" prefHeight="40.0" prefWidth="70.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="PE1" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="312.0" layoutY="9.0" mnemonicParsing="false" onAction="#changeScreenTo_ANLView" prefHeight="40.0" prefWidth="70.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="ANL" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="238.0" layoutY="9.0" mnemonicParsing="false" onAction="#changeScreenTo_PE2View" prefHeight="40.0" prefWidth="70.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="PE2" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="88.0" layoutY="9.0" mnemonicParsing="false" onAction="#changeScreenTo_PE0View" prefHeight="40.0" prefWidth="70.0" styleClass="login-button" stylesheets="@../StileGUI.css" text="PE0" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
