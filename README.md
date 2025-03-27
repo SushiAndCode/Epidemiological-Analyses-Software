@@ -8,9 +8,9 @@ Developed as part of a Software Engineering course project for the Bachelor’s 
 
 **Academic Year:** 2019-2020  
 **Authors:**  
-- Simone Brunello (VR437366)  
-- Daniele Nicoletti (VR429618)  
-- Nicholas Nicolis (VR429666)
+- Simone Brunello   
+- [Daniele Nicoletti](https://github.com/Salazar99)   
+- [Nicholas Nicolis](https://github.com/NicholasNicolis)
 
 ---
 
