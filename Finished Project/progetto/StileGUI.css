@@ -1,0 +1,122 @@
+.menu-header{
+    -fx-background-color: #000000;
+}
+
+.menu-bar{
+    -fx-background-color: #6200EE;
+}
+
+.menu-button {
+    -fx-background-color: #6200EE;
+    -fx-background-radius: 0;
+}
+
+.menu-button:hover {
+    -fx-background-color: #3700b3;
+}
+
+.menu-button:pressed {
+    -fx-background-color: #8E48F0;
+}
+
+.menu-button-active {
+    -fx-background-color: #3700b3;
+    -fx-background-radius: 0;
+}
+
+.selection-bar {
+    -fx-background-color: #cccccc;
+}
+
+.selection-bar-choise-box {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 0;
+}
+
+.selection-bar-choise-box:hover {
+    -fx-background-color: #bbbbbb;
+}
+
+.selection-bar-choise-box:pressed {
+    -fx-background-color: #dddddd;
+}
+
+.selection-bar-date-picker {
+    -fx-background-color: #bbbbbb;
+    -fx-background-radius: 0;
+}
+
+.selection-bar-date-picker .arrow-button {
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0;
+}
+
+.selection-bar-date-picker .date-picker-display-node {
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 0;
+}
+
+.selection-bar-date-picker:pressed .arrow-button:pressed{
+    -fx-background-color: #eeeeee;
+}
+
+.section-used-pane {
+    -fx-background-color: #3700b3;
+}
+
+.user-panel {
+    -fx-background-color: #000000;
+}
+
+.user-img {
+    -fx-fill: #ffffff;
+    -fx-stroke: #111111;
+}
+.user-pane {
+    -fx-background-color: #ffffff;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: #ffffff;
+}
+
+.table-view .column-header, .table-view .filler{
+    -fx-background-color: #cccccc;
+}
+
+
+/* VIEW LOGIN */
+.login-pane {
+    -fx-background-color: #3700b3;
+    -fx-border-width: 2;
+    -fx-border-color: #000000;
+}
+
+.login-psw {
+    -fx-background-color: #eeeeee;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
+
+.login-button {
+    -fx-background-color: #000000;
+    -fx-background-radius: 0;
+    -fx-border-color: #000000;
+}
+
+.login-button:hover {
+    -fx-background-color: #111111;
+}
+
+.login-button:pressed {
+    -fx-background-color: #8E48F0;
+}
+
+
+
+.home {
+    /*-fx-background-image: url("./img/bell.png");*/
+    -fx-background-color: #8E48F0;
+    -fx-border-radius: 0;
+    -fx-border-width: 0;
+}
