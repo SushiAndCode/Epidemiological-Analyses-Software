@@ -103,12 +103,3 @@ The documentation includes:
 
 ---
 
-## License
-
-This project was developed for academic purposes and is not currently distributed under any specific license.
-
----
-
-## Acknowledgments
-
-This work was developed as part of the Software Engineering course under the Bachelor’s degree in Computer Science.
